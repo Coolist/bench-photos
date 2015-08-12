@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Title -->
+  <title>Bench Photos &ndash; 52 Week Photography Project</title>
+
+  <!-- Base & Meta -->
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="One photo, every week, for a year.  A project by Bench.co.">
+  <!--<link rel="icon" type="image/png" href="{{ config.assetUrl }}/images/favicon.png">-->
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ config.assetUrl }}/styles/main.css?{{ config.now|date('YmdHis') }}">
+  <link rel="stylesheet" href="{{ config.assetUrl }}/styles/vendor/photoswipe-default-skin/default-skin.css?{{ config.now|date('YmdHis') }}">
+
+  <!-- Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+  <!-- Javascript -->
+  {% if config.environment == "testing" %}<script src="{{ config.assetUrl }}/js/live.js"></script>{% endif %}
+  <script>
+    document.createElement('picture');
+  </script>
+  <script src="{{ config.assetUrl }}/js/plugins.js" async></script>
+
+</head>
+<body class="page-home">
+  <div class="section-header">
+    <div class="container">
+      <h1>52 Photos</h1>
+      <span class="tagline">One photo, every week, for a year.</span>
+    </div>
+  </div>
+  <div class="section-week container">
+    <div class="title">
+      <h2>Emojis in the Wild</h2>
+      <span>1</span>
+    </div>
+    <div class="photo-grid js-masonry" data-masonry-options='{ "columnWidth": ".grid-sizer", "itemSelector": ".grid-item", "percentPosition": "true", "gutter": 20 }'>
+      <figure class="grid-item">
+        <a href="assets/images/photos/full/1/carly.jpg" data-size="1440x955">
+          <img src="assets/images/photos/grid/1/carly.jpg">
+        </a>
+      </figure>
+      <figure class="grid-item">
+        <a href="assets/images/photos/full/1/adam.jpg" data-size="1440x960">
+          <img src="assets/images/photos/grid/1/adam.jpg">
+        </a>
+      </figure>
+      <figure class="grid-item half">
+        <a href="assets/images/photos/full/1/kyle.jpg" data-size="911x1440">
+          <img src="assets/images/photos/grid/1/kyle.jpg">
+        </a>
+      </figure>
+      <figure class="grid-item">
+        <a href="assets/images/photos/full/1/josh.jpg" data-size="1440x899">
+          <img src="assets/images/photos/grid/1/josh.jpg">
+        </a>
+      </figure>
+      <figure class="grid-item half">
+        <a href="assets/images/photos/full/1/lachlan.jpg" data-size="956x1440">
+          <img src="assets/images/photos/grid/1/lachlan.jpg">
+        </a>
+      </figure>
+      <figure class="grid-item half">
+        <a href="assets/images/photos/full/1/lindsay.jpg" data-size="964x1440">
+          <img src="assets/images/photos/grid/1/lindsay.jpg">
+        </a>
+      </figure>
+      <figure class="grid-item half">
+        <a href="assets/images/photos/full/1/kendra.jpg" data-size="1080x1440">
+          <img src="assets/images/photos/grid/1/kendra.jpg">
+        </a>
+      </figure>
+      <figure class="grid-item half">
+        <a href="assets/images/photos/full/1/rachel.jpg" data-size="1080x1440">
+          <img src="assets/images/photos/grid/1/rachel.jpg">
+        </a>
+      </figure>
+      <div class="grid-sizer"></div>
+    </div>
+  </div>
+
+  {% include "./partials/photoswipe.html" %}
+
+  <!-- Analytics -->
+
+  
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+.page-home {
+  background-color: #FAFAFA;
+
+  .section-week {
+    background-color: #FFF;
+    overflow: visible;
+    padding-top: 20px;
+
+    .title {
+      text-align: center;
+      position: relative;
+      overflow: visible;
+      padding: 58px 0;
+      margin: 2em 0;
+
+      h2 {
+        position: relative;
+        font-size: 38px;
+        margin: 0;
+        color: #232323;
+        z-index: 2;
+      }
+
+      span {
+        position: absolute;
+        padding-top: 0.16em;
+        top: 50%;
+        left: 50%;
+        font-family: 'gokuregular', serif;
+        color: #FFED9B;
+        font-size: 190px;
+        line-height: 0.4;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .photo-grid {
+      padding: 40px 0;
+
+      figure {
+        margin: 0;
+      }
+
+      .grid-sizer {
+        width: calc(25% - 15px);
+      }
+
+      .grid-item {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        display: block;
+
+        cursor: zoom-in;
+
+        &.half {
+          width: calc(25% - 15px);
+        }
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
