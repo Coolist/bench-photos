@@ -1,13 +1,13 @@
 {
-  "name": "Fitness",
+  "name": "Bench-Photos",
   "version": "1.0.0",
-  "description": "Fitness brand development.",
+  "description": "Bench photos static site.",
   "main": "index.coffee",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "coffee index.coffee serve",
     "build": "coffee index.coffee build",
-    "deploy": "aws s3 sync build/ s3://bench-photos/ --acl public-read --delete --size-only --cache-control no-transform,public,max-age=604800"
+    "deploy": "aws s3 sync build/ s3://bench.photos/ --acl public-read --delete --size-only --cache-control no-transform,public,max-age=604800 --profile bench"
   },
   "dependencies": {
     "autoprefixer": "^5.2.0",
@@ -23,5 +23,8 @@
     "metalsmith-watch": "^1.0.1",
     "node-fs-extra": "^0.8.1",
     "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.3"
   }
 }

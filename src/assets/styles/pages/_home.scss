@@ -37,29 +37,24 @@
 
     .photo-grid {
       padding: 40px 0;
+      text-align: center;
 
       figure {
-        margin: 0;
-      }
+        display: inline-block;
+        max-width: 1200px;
+        margin: 20px 0;
 
-      .grid-sizer {
-        width: calc(25% - 15px);
-      }
+        @include breakpoint(small) {
+          margin: 10px 0;
+        }
 
-      .grid-item {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-        display: block;
-
-        cursor: zoom-in;
-
-        &.half {
-          width: calc(25% - 15px);
+        a {
+          display: inline-block;
         }
       }
 
       img {
-        width: 100%;
+        max-width: 100%;
         height: auto;
       }
     }

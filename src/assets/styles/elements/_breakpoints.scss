@@ -2,8 +2,12 @@
   @if $class == xsmall {
     @media (max-width: 320px) { @content; }
   }
+
+  @if $class == small {
+    @media (max-width: 640px) { @content; }
+  }
  
   @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    @warn "Breakpoint mixin supports: xsmall, small";
   }
 }
